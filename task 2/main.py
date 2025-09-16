@@ -15,15 +15,15 @@ def main(*args, **kwargs):
         a = int(input())
         b = int(input())
     else:
-        n = 10**6  #Размер набора чисел
+        n = 10**10  #Размер набора чисел
         a = 0       #Начальное значение интервала
-        b = 10**10   #Конечное значение интервала
+        b = 10**11   #Конечное значение интервала
 
-    list_collection = list_creator(n, a, b)
+    # list_collection = list_creator(n, a, b)
     set_collection =  set_creator(n, a, b)
     ndarray_collection = numpy_ndarray_collection(n, a, b)
 
-    write_to_csv("output", list_collection=list_collection,
+    write_to_csv("output", 
                            set_collection=set_collection,
                            ndarray_collection=ndarray_collection)
 
