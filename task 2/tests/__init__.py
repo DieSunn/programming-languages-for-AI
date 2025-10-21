@@ -1,0 +1,1 @@
+from modules.gaussian_func import gauss, read_data, calculate_gaussian_function
